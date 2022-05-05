@@ -1,0 +1,50 @@
+.fade-in-nav {
+    font-size: 1.5rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    animation: fadeInNav linear 4000ms;
+    -webkit-animation: fadeInNav linear 4000ms;
+    -moz-animation: fadeInNav linear 4000ms;
+    -o-animation: fadeInNav linear 4000ms;
+    -ms-animation: fadeInNav linear 4000ms;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+/*fade in animation*/
+
+@keyframes fadeInNav {
+    0% {opacity:0;}
+    75% { opacity: 0 ;}
+    100% {opacity:1;}
+}
+
+@-moz-keyframes fadeInNav {
+    0% {opacity:0;}
+    75% { opacity: 0 ;}
+    100% {opacity:1;}
+  }
+  
+@-webkit-keyframes fadeInNav {
+    0% {opacity:0;}
+    75% { opacity: 0 ;}
+    100% {opacity:1;}
+}
+
+@-o-keyframes fadeInNav {
+    0% {opacity:0;}
+    75% { opacity: 0 ;}
+    100% {opacity:1;}
+}
+
+@-ms-keyframes fadeInNav {
+    0% {opacity:0;}
+    75% { opacity: 0 ;}
+    100% {opacity:1;}
+}
