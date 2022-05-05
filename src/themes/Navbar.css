@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-top: 4rem;
     animation: fadeInNav linear 4000ms;
     -webkit-animation: fadeInNav linear 4000ms;
     -moz-animation: fadeInNav linear 4000ms;

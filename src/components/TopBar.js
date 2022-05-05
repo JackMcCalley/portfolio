@@ -15,6 +15,7 @@ import AddIcCallSharpIcon from '@mui/icons-material/AddIcCallSharp';
 import EmailSharpIcon from '@mui/icons-material/EmailSharp';
 import LoginSharpIcon from '@mui/icons-material/LoginSharp';
 import JackMcCalleyResume from '../files/JackMcCalleyResume.pdf'
+import { createTheme, ThemeProvider, styled } from '@mui/material/styles';
 
 export default function ButtonAppBar() {
 
@@ -26,6 +27,8 @@ export default function ButtonAppBar() {
   const handleClose = () => {
     setAnchorEl(null);
   };
+
+  const darkTheme = createTheme({ palette: { mode: 'dark' } });
 
   return (
     <Box sx={{ flexGrow: 1 }}>
@@ -43,6 +46,7 @@ export default function ButtonAppBar() {
           >
             Contact
           </Button>
+          <ThemeProvider theme={darkTheme}>
           <Menu
             id='contact'
             anchorEl={anchorEl}
@@ -71,6 +75,7 @@ export default function ButtonAppBar() {
               <ListItemText><Link color='inherit' underline='none' target='_blank' href='https://www.linkedin.com/in/jackmccalley/'>LinkedIn</Link></ListItemText>
             </MenuItem>
           </Menu>
+          </ThemeProvider>
           <Button 
             href={JackMcCalleyResume} 
             target="_blank" 
