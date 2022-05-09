@@ -6,8 +6,13 @@ import { Container, Row, Col, Grid } from "react-bootstrap";
 import Paper from '@mui/material/Paper'
 import Box from '@mui/material/Box'
 import ButtonAppBar from "./TopBar";
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Typography from '@mui/material/Typography'
 import examplephoto128 from '../images/examplephoto128.png'
-import { createTheme, ThemeProvider, styled } from '@mui/material/styles';
+import { createTheme, ThemeProvider, useTheme } from '@mui/material/styles';
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 function Home() {
 
@@ -30,29 +35,39 @@ function Home() {
                     </Col>
                 </Row>
             </Container>
-            <Row className="projectsBody">
+            <Container className="projectsBody">
+                <ThemeProvider theme={darkTheme}>
                 <Box sx={{
-                    width: '20rem', height: '10rem', 
+                    width: '60rem', 
+                    height: '10rem', 
                     backgroundColor: 'primary.dark',
-                    // '&:hover': {
-                    //     backgroundColor: 'primary.main',
-                    //     opacity: [0.9, 0.8, 0.7]
-                    // }
-                    }}>
-                    <Paper className="papers" elevation={3}>
-                        <Container fluid="md" style={{width: '100%'}}>
-                            <Row>
-                                <Col>
-                                    <img src={examplephoto128}/>
-                                </Col>
-                                <Col>
-                                    This is a description of 128 Productions
-                                </Col>
-                            </Row>   
-                        </Container>           
-                    </Paper>    
+                    }}
+                >
+                    <Card sx={{ display: 'flex', flexWrap: 'wrap' }}>
+                    <CardMedia
+                        component="img"
+                        sx={{width: '40rem'}}
+                        image={examplephoto128}
+                    />
+                    <Box sx={{ display: 'flex', width: '20rem', flexDirection: 'column' }}>
+                        <CardContent sx={{ flex: '1 0 auto' }}>
+                        <Typography component="div" variant="h5">
+                        <a className="colorhover" href="https://www.128productions.com" target="_blank">128productions.com</a>
+                        </Typography>
+                        <Typography variant="subtitle1" color="text.secondary" component="div">
+                            <br/>128 Productions is an events coordination company located in Denver, CO. Written in
+                            React.js, styled in Bootstrap. Incorporated Contentful CMS for event
+                            management and photo galleries. Displays a developed and
+                            advanced understanding of React Hooks and headless content
+                            management systems.
+                        </Typography>
+                        </CardContent>
+                    </Box>
+                    
+                    </Card>  
                 </Box>
-            </Row>
+                </ThemeProvider>
+            </Container>
             </div>
     )
 }

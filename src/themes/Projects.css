@@ -1,13 +1,17 @@
 .projectsBody {
-    min-height: 'auto';
     width: 100%;
-    background-color: #181a1b
+    height: 40rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5rem;
 }
 
 .papers {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 img {
