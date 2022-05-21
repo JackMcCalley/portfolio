@@ -23,11 +23,11 @@
     margin-top: 30%;
     display: inline-block;
     color: rgb(255, 255, 255);
-    animation: fadeIn linear 3000ms, transformUp linear 3300ms;
-    -webkit-animation: fadeIn linear 3000ms, transformUp linear 3300ms;
-    -moz-animation: fadeIn linear 3000ms, transformUp linear 3300ms;
-    -o-animation: fadeIn linear 3000ms, transformUp linear 3300ms;
-    -ms-animation: fadeIn linear 3000ms, transformUp linear 3300ms;
+    animation: fadeIn linear 3000ms;
+    -webkit-animation: fadeIn linear 3000ms;
+    -moz-animation: fadeIn linear 3000ms;
+    -o-animation: fadeIn linear 3000ms;
+    -ms-animation: fadeIn linear 3000ms;
     -webkit-animation-fill-mode: forwards;
     -webkit-user-select: none; /* Safari */        
     -moz-user-select: none; /* Firefox */

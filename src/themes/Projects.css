@@ -1,20 +1,10 @@
 .projectsBody {
     width: 100%;
-    height: 40rem;
+    height: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 5rem;
-}
-
-.papers {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-img {
-    width: 100%;
-    height: 100%;
+    padding-bottom: 5rem;
 }
