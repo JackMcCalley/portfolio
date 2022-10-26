@@ -8,3 +8,9 @@
     margin-top: 5rem;
     padding-bottom: 5rem;
 }
+
+.projects-title {
+    padding: '1rem';
+    font-size: '5rem';
+    color: 'white'
+}
